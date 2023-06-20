@@ -150,15 +150,6 @@ class Test(unittest.TestCase):
         name = "/tmp/WASTE  2 SECONDS OF YOUR LIFE.m4a"
         self.assertEqual(63639, os.stat(name).st_size)
 
-    #def test_lazy_pafy(self):
-    #    """ Test create pafy object without fetching data. """
-
-    #    vid = pafy.new("DsAn_n6O5Ns", basic=False, signature=False)
-    #    self.assertEqual(vid.bigthumb, '')
-    #    self.assertEqual(vid.bigthumbhd, '')
-    #    self.assertIsInstance(vid.likes, int)
-    #    self.assertIsInstance(vid.dislikes, int)
-
     def test_pafy_init(self):
         """ Test Pafy object creation. """
         # test bad video id, 11 chars
